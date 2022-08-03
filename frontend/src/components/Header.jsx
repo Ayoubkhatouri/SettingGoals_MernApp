@@ -3,7 +3,8 @@ import  {FaSignInAlt,FaSignOutAlt,FaUser} from 'react-icons/fa'
 import {Link,useNavigate} from 'react-router-dom'
 import {useSelector,useDispatch} from 'react-redux'
 import {logout,reset} from '../features/auth/authSlice'
-import { Button } from '@mui/material'
+
+
 
 
 function Header() {
@@ -27,7 +28,7 @@ function Header() {
             {user ? (   
             <li>
                  
-                <Button className='btn' onClick={onLogout}><FaSignOutAlt/> Logout</Button>
+                <button className='btn' onClick={onLogout}><FaSignOutAlt/> Logout</button>
             </li> ) : ( 
                 <>
                 <li>
