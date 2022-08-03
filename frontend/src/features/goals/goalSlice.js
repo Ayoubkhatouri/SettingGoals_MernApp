@@ -96,7 +96,7 @@ export const goalSlice=createSlice({
             state.isLoading=false
             state.isSuccess=true
             state.goals=state.goals.filter((goal)=>goal._id !== action.payload.id) //so it delete from the UI 
-                                                                        //in the same momoent without do a refresh
+                                                                        //in the same moment without do a refresh
                                     //and we return from the server the id of deleted goal 
                                     // that's why we did action.payload.id
         })
