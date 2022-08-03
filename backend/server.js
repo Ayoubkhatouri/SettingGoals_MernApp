@@ -30,7 +30,7 @@ if(process.env.NODE_ENV === 'production'){
     app.get('*',(req,resp)=>resp.sendFile(path.resolve(__dirname,'../','frontend','build','index.html')))
 }
 else{
-    app.get('/',(res,resp)=>res.send('Please set to production'))
+    app.get('/',(req,resp)=>resp.send('Please set to production'))
 }
 
 app.use(errrHandler)
